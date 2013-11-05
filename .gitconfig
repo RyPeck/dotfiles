@@ -1,0 +1,9 @@
+[push]
+	default = simple
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[user]
+	name = Ryan Peck
+	email = ryan@rypeck.com
