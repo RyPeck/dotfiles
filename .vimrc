@@ -12,6 +12,14 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 
 autocmd BufRead,BufNewFile *.md setlocal textwidth=80 spell
 
+augroup vagrant
+	au!
+	au BufRead,BufNewFile Vagrantfile set filetype=ruby
+augroup END
+
+autocmd Filetype ruby setlocal textwidth=80 ts=2 et sw=2 sts=2
+autocmd Filetype ruby setlocal nocindent
+
 syntax on
 filetype on
 filetype plugin indent on
